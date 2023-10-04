@@ -12,6 +12,5 @@ The application allows you to make a shopping list (CRUD for products) using con
 - **Lombok** for code generation
 - **Maven** as build tool
 
-```
 ## Access the running app
 - [API interaction via Swagger](http://localhost:8080/swagger-ui/index.html#/)
