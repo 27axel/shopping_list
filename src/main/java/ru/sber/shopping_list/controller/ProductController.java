@@ -66,8 +66,9 @@ public class ProductController {
      * @param id The unique identifier of the product to be deleted.
      */
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable long id) {
+    public ResponseEntity<?> deleteProduct(@PathVariable long id) {
         productService.deleteProduct(id);
+        return ResponseEntity.ok().build();
     }
 
 }

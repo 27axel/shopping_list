@@ -52,6 +52,7 @@ public class ProductService {
         if (optionalProduct.isPresent()) {
             return optionalProduct.get();
         }
+        logger.warn("This product not found");
         throw new RuntimeException("This product not found");
     }
 
